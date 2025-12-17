@@ -1,3 +1,48 @@
 <resources>
-    <string name="app_name">DoubleTapToWeak</string>
+    <string name="app_name">Double Tap To Weak</string>
+    <string name="accessibility_service_description">Allows the app to lock the screen with a double tap action.</string>
+    
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">Welcome</string>
+    <string name="onboarding_welcome_desc">Double Tap To Weak helps you wake up and lock your screen without physical buttons. Let\'s set it up!</string>
+    <string name="onboarding_wake_title">Double Tap to Wake</string>
+    <string name="onboarding_wake_desc">We use your phone\'s accelerometer to detect taps/shakes when the screen is off. NOTE: This requires keeping the CPU awake, which uses more battery.</string>
+    <string name="onboarding_battery_title">Critical: Battery Optimization</string>
+    <string name="onboarding_battery_desc">Samsung &amp; other devices will kill this app if you don\'t exclude it from battery optimizations. Allowing this in the next step is crucial.</string>
+    <string name="onboarding_lock_title">Double Tap to Lock</string>
+    <string name="onboarding_lock_desc">To lock the screen, we use an Accessibility Service. You\'ll need to enable this permission manually.</string>
+    <string name="onboarding_button_next">Next</string>
+    <string name="onboarding_button_get_started">Get Started</string>
+    <string name="onboarding_button_skip">Skip</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">Double Tap</string>
+    <string name="home_subtitle">Wake &amp; Lock</string>
+    <string name="home_battery_warning_title">⚠️ Battery Optimization</string>
+    <string name="home_battery_warning_subtitle">REQUIRED for Samsung &amp; other devices</string>
+    <string name="home_battery_warning_desc">Your phone may stop the sensor service when the screen is off. Please disable Battery Optimization for this app.</string>
+    <string name="home_battery_button_disable">Disable Optimization</string>
+    <string name="home_battery_samsung_hint">For Samsung: Also go to Device Care > Battery > App Power Management > Double Tap To Weak > Don\'t Optimize</string>
+    
+    <string name="home_wake_title">Tap to Wake</string>
+    <string name="home_wake_subtitle">Enable accelerometer to wake screen</string>
+    <string name="home_wake_sensitivity">Sensitivity</string>
+    <string name="home_wake_battery_warning">High Battery Usage Warning</string>
+    
+    <string name="home_lock_title">Tap to Lock</string>
+    <string name="home_lock_subtitle">Enable accessibility service to lock</string>
+    <string name="home_lock_button_enable">Enable</string>
+    <string name="home_lock_button_actions">Actions</string>
+    <string name="home_lock_active_msg">Service is active. You can now use the Lock Widget or Overlay (Coming Soon). For now, use the button below to test lock.</string>
+    <string name="home_lock_test_button">Test Lock Now</string>
+    
+    <!-- Notification -->
+    <string name="notification_title">Double Tap to Wake Active</string>
+    <string name="notification_text_running">Keeping CPU awake to listen (Battery Intensive)</string>
+    <string name="notification_text_events">Events: %1$d | Screen: %2$s</string>
+    
+    <!-- Tap to Lock (In App) -->
+    <string name="home_tap_lock_title">Double Tap Home to Lock</string>
+    <string name="home_tap_lock_subtitle">Double tap background to lock screen</string>
+    <string name="home_tap_lock_hint">👆 Double tap this area to lock screen</string>
 </resources>

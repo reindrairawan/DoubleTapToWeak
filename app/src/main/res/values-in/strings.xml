@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Double Tap To Weak</string>
+    <string name="accessibility_service_description">Mengizinkan aplikasi untuk mengunci layar dengan aksi ketuk ganda.</string>
+    
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">Selamat Datang</string>
+    <string name="onboarding_welcome_desc">Double Tap To Weak membantu Anda menghidupkan dan mengunci layar tanpa tombol fisik. Mari kita atur!</string>
+    <string name="onboarding_wake_title">Ketuk Ganda untuk Bangun</string>
+    <string name="onboarding_wake_desc">Kami menggunakan akselerometer ponsel untuk mendeteksi ketukan/goyangan saat layar mati. CATATAN: Ini membuat CPU tetap aktif dan menggunakan lebih banyak baterai.</string>
+    <string name="onboarding_battery_title">Penting: Optimalisasi Baterai</string>
+    <string name="onboarding_battery_desc">Samsung &amp; perangkat lain akan mematikan aplikasi ini jika tidak dikecualikan dari optimalisasi baterai. Mengizinkan ini sangat penting.</string>
+    <string name="onboarding_lock_title">Ketuk Ganda untuk Mengunci</string>
+    <string name="onboarding_lock_desc">Untuk mengunci layar, kami menggunakan Layanan Aksesibilitas. Anda perlu mengaktifkan izin ini secara manual.</string>
+    <string name="onboarding_button_next">Lanjut</string>
+    <string name="onboarding_button_get_started">Mulai</string>
+    <string name="onboarding_button_skip">Lewati</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">Ketuk Ganda</string>
+    <string name="home_subtitle">Bangun &amp; Kunci</string>
+    <string name="home_battery_warning_title">⚠️ Optimalisasi Baterai</string>
+    <string name="home_battery_warning_subtitle">DIBUTUHKAN untuk Samsung &amp; lainnya</string>
+    <string name="home_battery_warning_desc">Ponsel Anda mungkin mematikan layanan sensor saat layar mati. Harap nonaktifkan Optimalisasi Baterai untuk aplikasi ini.</string>
+    <string name="home_battery_button_disable">Matikan Optimalisasi</string>
+    <string name="home_battery_samsung_hint">Untuk Samsung: Buka juga Perawatan Perangkat > Baterai > Manajemen Daya Aplikasi > Double Tap To Weak > Jangan Optimalkan</string>
+    
+    <string name="home_wake_title">Ketuk untuk Bangun</string>
+    <string name="home_wake_subtitle">Aktifkan akselerometer untuk bangun</string>
+    <string name="home_wake_sensitivity">Sensitivitas</string>
+    <string name="home_wake_battery_warning">Peringatan Pemakaian Baterai Tinggi</string>
+    
+    <string name="home_lock_title">Ketuk untuk Kunci</string>
+    <string name="home_lock_subtitle">Aktifkan layanan aksesibilitas untuk kunci</string>
+    <string name="home_lock_button_enable">Aktifkan</string>
+    <string name="home_lock_button_actions">Aksi</string>
+    <string name="home_lock_active_msg">Layanan aktif. Anda sekarang dapat menggunakan Widget Kunci atau Overlay (Segera Hadir). Gunakan tombol di bawah untuk tes.</string>
+    <string name="home_lock_test_button">Tes Kunci Sekarang</string>
+    
+    <!-- Notification -->
+    <string name="notification_title">Ketuk Ganda Aktif</string>
+    <string name="notification_text_running">Menjaga CPU tetap aktif (Boros Baterai)</string>
+    <string name="notification_text_events">Event: %1$d | Layar: %2$s</string>
+    
+    <!-- Tap to Lock (In App) -->
+    <string name="home_tap_lock_title">Ketuk Ganda Beranda untuk Kunci</string>
+    <string name="home_tap_lock_subtitle">Ketuk ganda background untuk kunci layar</string>
+    <string name="home_tap_lock_hint">👆 Ketuk ganda area ini 2x untuk mengunci layar</string>
+</resources>
