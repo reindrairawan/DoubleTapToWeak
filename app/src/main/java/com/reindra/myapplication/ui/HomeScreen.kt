@@ -205,7 +205,11 @@ fun HomeScreen(
                         val intent = Intent(context, SensorService::class.java)
                         if (newState) {
                             // Start Service
-                            context.startForegroundService(intent)
+                            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                                context.startForegroundService(intent)
+                            } else {
+                                context.startService(intent)
+                            }
                         } else {
                             context.stopService(intent)
                         }
@@ -301,9 +305,22 @@ fun HomeScreen(
              }
         }
         
+        }
+        
+        Spacer(modifier = Modifier.height(32.dp))
+        
+        // Developer Credit
+        Text(
+            text = androidx.compose.ui.res.stringResource(com.reindra.myapplication.R.string.developer_credit),
+            style = MaterialTheme.typography.labelMedium,
+            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
+            modifier = Modifier.fillMaxWidth(),
+            textAlign = TextAlign.Center
+        )
+        
         Spacer(modifier = Modifier.height(32.dp))
     }
-}
+
 
 fun isAccessibilityServiceEnabled(context: Context, service: Class<*>): Boolean {
     val am = context.getSystemService(Context.ACCESSIBILITY_SERVICE) as android.view.accessibility.AccessibilityManager

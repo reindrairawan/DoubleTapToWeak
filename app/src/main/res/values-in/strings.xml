@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Double Tap To Weak</string>
+    <string name="app_name">Ketuk Ganda: Bangun &amp; Kunci</string>
     <string name="accessibility_service_description">Mengizinkan aplikasi untuk mengunci layar dengan aksi ketuk ganda.</string>
     
     <!-- Onboarding -->
@@ -46,4 +46,6 @@
     <string name="home_tap_lock_title">Ketuk Ganda Beranda untuk Kunci</string>
     <string name="home_tap_lock_subtitle">Ketuk ganda background untuk kunci layar</string>
     <string name="home_tap_lock_hint">👆 Ketuk ganda area ini 2x untuk mengunci layar</string>
+    
+    <string name="developer_credit">Dikembangkan oleh Awis Developer</string>
 </resources>

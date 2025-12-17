@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Double Tap To Weak</string>
+    <string name="app_name">Double Tap: Wake &amp; Lock</string>
     <string name="accessibility_service_description">Allows the app to lock the screen with a double tap action.</string>
     
     <!-- Onboarding -->
@@ -45,4 +45,6 @@
     <string name="home_tap_lock_title">Double Tap Home to Lock</string>
     <string name="home_tap_lock_subtitle">Double tap background to lock screen</string>
     <string name="home_tap_lock_hint">👆 Double tap this area to lock screen</string>
+    
+    <string name="developer_credit">Developed by Awis Developer</string>
 </resources>
