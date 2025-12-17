@@ -26,7 +26,7 @@
     <string name="home_battery_samsung_hint">Untuk Samsung: Buka juga Perawatan Perangkat > Baterai > Manajemen Daya Aplikasi > Double Tap To Weak > Jangan Optimalkan</string>
     
     <string name="home_wake_title">Ketuk untuk Bangun</string>
-    <string name="home_wake_subtitle">Aktifkan akselerometer untuk bangun</string>
+    <string name="home_wake_subtitle">Ketuk ganda badan HP untuk menyalakan layar</string>
     <string name="home_wake_sensitivity">Sensitivitas</string>
     <string name="home_wake_battery_warning">Peringatan Pemakaian Baterai Tinggi</string>
     

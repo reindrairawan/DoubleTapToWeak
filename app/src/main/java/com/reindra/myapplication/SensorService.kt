@@ -158,8 +158,16 @@ class SensorService : Service(), SensorEventListener {
                     Log.d(TAG, "Shake count incremented to: $shakeCount")
                     
                     if (shakeCount >= 1) { // 2 shakes
-                        Log.i(TAG, "*** DOUBLE SHAKE DETECTED! Calling wakeUpScreen() ***")
-                        wakeUpScreen()
+                        val isScreenOn = powerManager.isInteractive
+                        Log.i(TAG, "*** DOUBLE SHAKE DETECTED! Screen ON: $isScreenOn ***")
+                        
+                        // Only wake if screen is OFF
+                        if (!isScreenOn) {
+                            Log.i(TAG, "==> Waking screen (screen is OFF)")
+                            wakeUpScreen()
+                        } else {
+                            Log.d(TAG, "Screen is already ON, ignoring shake")
+                        }
                         shakeCount = 0
                     }
                 } else {
@@ -172,6 +180,28 @@ class SensorService : Service(), SensorEventListener {
             lastX = x
             lastY = y
             lastZ = z
+        }
+    }
+    
+    private fun lockScreen() {
+        // Use LockAccessibilityService to lock the screen
+        val intent = Intent(this, LockAccessibilityService::class.java).apply {
+            action = LockAccessibilityService.ACTION_LOCK
+        }
+        startService(intent)
+        Log.i(TAG, "lockScreen() - Intent sent to LockAccessibilityService")
+        
+        // Vibrate feedback
+        try {
+            val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as android.os.Vibrator
+            if (android.os.Build.VERSION.SDK_INT >= 26) {
+                 vibrator.vibrate(android.os.VibrationEffect.createOneShot(100, android.os.VibrationEffect.DEFAULT_AMPLITUDE))
+            } else {
+                 @Suppress("DEPRECATION")
+                 vibrator.vibrate(100)
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Vibration FAILED: ${e.message}")
         }
     }
 

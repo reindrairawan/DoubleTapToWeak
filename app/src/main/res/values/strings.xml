@@ -25,7 +25,7 @@
     <string name="home_battery_samsung_hint">For Samsung: Also go to Device Care > Battery > App Power Management > Double Tap To Weak > Don\'t Optimize</string>
     
     <string name="home_wake_title">Tap to Wake</string>
-    <string name="home_wake_subtitle">Enable accelerometer to wake screen</string>
+    <string name="home_wake_subtitle">Double tap phone body to wake screen</string>
     <string name="home_wake_sensitivity">Sensitivity</string>
     <string name="home_wake_battery_warning">High Battery Usage Warning</string>
     
